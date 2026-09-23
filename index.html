@@ -247,7 +247,7 @@ svg .pop{transform-box:view-box}
 <section class="slide bg-paper" data-t="Как сейчас">
   <div class="pad">
     <div class="eyebrow" data-a style="--d:0">Как сейчас устроен сайт</div>
-    <h2 class="h2" data-a style="--d:1;margin-top:20px;max-width:1260px">Webflow был правильным выбором.<br>Правила изменились после блокировок VPN.</h2>
+    <h2 class="h2" data-a style="--d:1;margin-top:20px;max-width:1440px">Webflow был правильным выбором.<br>Правила изменились после блокировок Cloudflare.</h2>
     <div class="grid g2" style="margin-top:46px;gap:90px;max-width:1340px">
       <div>
         <div class="eyebrow mute" data-a style="--d:2">Что есть</div>
@@ -256,7 +256,7 @@ svg .pop{transform-box:view-box}
           <li data-a style="--d:3"><p class="body">Сайты White Circle и White Square на Webflow: когда мы их запускали, платформа работала в России без ограничений.</p></li>
           <li data-a style="--d:3"><p class="body">246&nbsp;внутренних страниц только в CMS: 181&nbsp;материал «Аналитика и новости», 26&nbsp;карточек команды, 19&nbsp;услуг, 10&nbsp;рейтингов и ещё 10 страниц.</p></li>
           <li data-a style="--d:4"><p class="body">Форма заявки на каждой странице, главный канал входящих обращений.</p></li>
-          <li data-a style="--d:5"><p class="body">После того как в России начали блокировать VPN и зарубежные сервисы, Webflow стал открываться с перебоями. Чтобы сайт оставался доступен, пришлось поднять для России копию на WordPress.</p></li>
+          <li data-a style="--d:5"><p class="body">В России начали блокировать CDN Cloudflare, на котором работает Webflow, и сайты на Webflow перестали открываться без VPN. Чтобы сайт оставался доступен, пришлось поднять для России копию на WordPress.</p></li>
         </ul>
       </div>
       <div data-step="1">
@@ -264,7 +264,7 @@ svg .pop{transform-box:view-box}
         <div class="rule" data-a="clip" style="--d:2;margin:16px 0 26px;background:var(--or)"></div>
         <ul style="list-style:none;display:grid;gap:20px">
           <li data-a style="--d:3"><p class="body">Копия на WordPress сбоит: часть страниц не открывается.</p></li>
-          <li data-a style="--d:4"><p class="body">Формы обратной связи работают с перебоями, и заявки могут не доходить.</p></li>
+          <li data-a style="--d:4"><p class="body">Формы работают с перебоями, а Webflow не даёт повесить на них цели Яндекс&nbsp;Метрики: непонятно, сколько заявок приносит сайт.</p></li>
           <li data-a style="--d:5"><p class="body">Любую правку контента приходится делать в двух системах.</p></li>
           <li data-a style="--d:6"><p class="body">Каждый месяц нужно платить за подписку Webflow.</p></li>
         </ul>
@@ -338,8 +338,8 @@ svg .pop{transform-box:view-box}
       <div class="c-new" data-a style="--d:3">Все страницы открываются в России и в мире без VPN</div>
 
       <div class="ml" data-a style="--d:4"><b>Заявки</b></div>
-      <div class="c-was" data-a style="--d:4">Формы работают с перебоями</div>
-      <div class="c-new" data-a style="--d:4">Приходят на почту и в Telegram, копия каждой хранится в админке</div>
+      <div class="c-was" data-a style="--d:4">Формы с перебоями, цели Метрики на них не повесить</div>
+      <div class="c-new" data-a style="--d:4">Доходят на почту и в Telegram, каждая видна в Метрике и хранится в админке</div>
 
       <div class="ml" data-a data-step="1" style="--d:5"><b>Управление</b></div>
       <div class="c-was" data-a data-step="1" style="--d:5">Две системы, каждую правку делают дважды</div>
@@ -352,6 +352,10 @@ svg .pop{transform-box:view-box}
       <div class="ml" data-a data-step="1" style="--d:7"><b>Скорость</b></div>
       <div class="c-was" data-a data-step="1" style="--d:7">Лишние скрипты платформы и прослойки</div>
       <div class="c-new" data-a data-step="1" style="--d:7">Чистый код, страницы грузятся быстрее</div>
+
+      <div class="ml" data-a data-step="2" style="--d:8"><b>Свобода</b></div>
+      <div class="c-was" data-a data-step="2" style="--d:8">Если Webflow или Cloudflare снова заблокируют, повлиять на это нельзя</div>
+      <div class="c-new" data-a data-step="2" style="--d:8">Свой код на своём хостинге: если что-то изменится, заменим хостинг или сервис</div>
     </div>
   </div>
   <div class="foot"><a class="ft" href="https://stateofmindagency.com/" target="_blank" rel="noopener">stateofmindagency.com</a><span>2026</span></div>
@@ -376,7 +380,7 @@ svg .pop{transform-box:view-box}
         <p class="small" style="margin-top:10px">Тексты, статьи Insights, услуги, команда и вакансии редактируются в одном окне, без программиста.</p></div>
       <div data-a data-step="1" style="--d:6"><div class="rule" style="background:var(--amber);height:2px;margin-bottom:18px"></div>
         <div class="sub">Надёжные формы</div>
-        <p class="small" style="margin-top:10px">Заявка уходит на почту и в Telegram, а копия остаётся в админке. Даже если письмо не дошло, обращение не пропадёт.</p></div>
+        <p class="small" style="margin-top:10px">Заявка уходит на почту и в Telegram, копия остаётся в админке, а цели Яндекс&nbsp;Метрики показывают, сколько заявок приносит сайт.</p></div>
       <div data-a data-step="1" style="--d:7"><div class="rule" style="background:var(--amber);height:2px;margin-bottom:18px"></div>
         <div class="sub">Запуск на вашем хостинге</div>
         <p class="small" style="margin-top:10px">Вы покупаете хостинг у своего регистратора и даёте нам доступ. Мы разворачиваем сайт и переключаем домен без простоя.</p></div>
@@ -912,7 +916,7 @@ figcaption .ln a:hover{opacity:.7}
 <tr class="es-sec"><td>3</td><td colspan="4">Админка и формы</td><td class="es-s">$570</td></tr>
 <tr><td></td><td>Админка: тексты, статьи, услуги, команда, вакансии</td><td>Тим лид</td><td>6</td><td>$50</td><td>$300</td></tr>
 <tr><td></td><td>Подключение страниц и коллекций к админке</td><td>Верстальщик</td><td>3</td><td>$40</td><td>$120</td></tr>
-<tr><td></td><td>Формы: доставка на почту и в Telegram, хранение заявок в админке, защита от спама</td><td>Тим лид</td><td>3</td><td>$50</td><td>$150</td></tr>
+<tr><td></td><td>Формы: доставка на почту и в Telegram, цели Яндекс Метрики, хранение заявок в админке, защита от спама</td><td>Тим лид</td><td>3</td><td>$50</td><td>$150</td></tr>
 <tr class="es-sec"><td>4</td><td colspan="4">Тестирование и тех. подключение</td><td class="es-s">$260</td></tr>
 <tr><td></td><td>Тестирование из России и других стран, браузеры, устройства, отправка всех форм</td><td>Верстальщик</td><td>4</td><td>$40</td><td>$160</td></tr>
 <tr><td></td><td>Развёртывание на вашем хостинге, домены, SSL, переключение без простоя</td><td>Тим лид</td><td>2</td><td>$50</td><td>$100</td></tr>
