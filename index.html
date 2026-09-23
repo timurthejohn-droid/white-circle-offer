@@ -226,14 +226,14 @@ svg .pop{transform-box:view-box}
   <div class="pad">
     <div class="side-tag" data-a="fade" style="--d:7">сайт без подписки</div>
     <div style="position:absolute;left:88px;top:286px;width:1240px">
-      <div class="eyebrow" data-a style="--d:1;color:var(--amber)">White Circle · коммерческое предложение</div>
+      <div class="eyebrow" data-a style="--d:1;color:var(--amber)">White Circle · White Square · коммерческое предложение</div>
       <h1 class="hero" style="margin-top:26px;font-size:63px;max-width:1260px">
         <span data-a style="--d:2;display:block">Сайт, который открывается везде</span>
         <span data-a style="--d:3;display:block">и не теряет ни одной заявки</span>
       </h1>
       <p class="lead" data-a style="--d:5;margin-top:34px;max-width:860px">
-        Переносим оба сайта White Circle с Webflow и WordPress на собственный код
-        с удобной админкой. Одна система вместо двух и никакой ежемесячной подписки.
+        Переносим сайты White Circle и White Square с Webflow и WordPress на собственный код
+        с удобной админкой. Никаких прослоек и никакой ежемесячной подписки.
       </p>
     </div>
   </div>
@@ -246,13 +246,13 @@ svg .pop{transform-box:view-box}
 <section class="slide bg-paper" data-t="Как сейчас">
   <div class="pad">
     <div class="eyebrow" data-a style="--d:0">Как сейчас устроен сайт</div>
-    <h2 class="h2" data-a style="--d:1;margin-top:20px;max-width:1260px">Сайт собран на Webflow. Для России<br>пришлось держать рядом вторую копию.</h2>
+    <h2 class="h2" data-a style="--d:1;margin-top:20px;max-width:1260px">Сайты собраны на Webflow. Для России<br>пришлось держать рядом копию.</h2>
     <div class="grid g2" style="margin-top:62px;gap:90px;max-width:1340px">
       <div>
         <div class="eyebrow mute" data-a style="--d:2">Что есть</div>
         <div class="rule" data-a="clip" style="--d:2;margin:16px 0 26px"></div>
         <ul style="list-style:none;display:grid;gap:20px">
-          <li data-a style="--d:3"><p class="body">Основной сайт на Webflow: 65 страниц, из них 24 статьи в Insights.</p></li>
+          <li data-a style="--d:3"><p class="body">Сайты White Circle и White Square на Webflow. Только у White Circle 65 страниц, из них 24 статьи в Insights.</p></li>
           <li data-a style="--d:4"><p class="body">Форма заявки на каждой странице, главный канал входящих обращений.</p></li>
           <li data-a style="--d:5"><p class="body">Из России Webflow без VPN открывается нестабильно, поэтому для этих посетителей работает копия на WordPress.</p></li>
         </ul>
@@ -324,7 +324,7 @@ svg .pop{transform-box:view-box}
 <section class="slide bg-paper" data-t="Наше решение">
   <div class="pad">
     <div class="eyebrow" data-a style="--d:0">Наше решение</div>
-    <h2 class="h2" data-a style="--d:1;margin-top:20px;max-width:1300px">Один сайт на собственном коде<br>вместо Webflow и копии на WordPress.</h2>
+    <h2 class="h2" data-a style="--d:1;margin-top:20px;max-width:1300px">Собственный код для обоих сайтов<br>вместо Webflow и копии на WordPress.</h2>
 
     <div class="cmp" style="margin-top:44px">
       <div class="mh ml" data-a="fade" style="--d:2"></div>
@@ -365,7 +365,7 @@ svg .pop{transform-box:view-box}
     <div class="grid g3" style="margin-top:56px;gap:46px 64px;max-width:1424px">
       <div data-a style="--d:3"><div class="rule" style="background:var(--or);height:2px;margin-bottom:18px"></div>
         <div class="sub">Перенос дизайна один в один</div>
-        <p class="small" style="margin-top:10px">Все 65 страниц, анимации и мобильная версия. Внешне сайт не меняется, меняется всё, что под ним.</p></div>
+        <p class="small" style="margin-top:10px">Все страницы обоих сайтов, анимации и мобильная версия. Внешне сайт не меняется, меняется всё, что под ним.</p></div>
       <div data-a style="--d:4"><div class="rule" style="background:var(--or);height:2px;margin-bottom:18px"></div>
         <div class="sub">Собственный код</div>
         <p class="small" style="margin-top:10px">Быстрый сайт без привязки к платформе. Его можно перенести на любой хостинг и развивать без ограничений.</p></div>
@@ -477,7 +477,7 @@ svg .pop{transform-box:view-box}
         <div data-a="scale" style="--d:3;margin-top:34px" class="inv-sum">$3&nbsp;000</div>
         <p class="lead" data-a style="--d:4;margin-top:22px;max-width:640px">Перенос обоих сайтов на собственный код, админка, формы заявок, хостинг и запуск.
           Платёж разовый, подписка Webflow больше не нужна.</p>
-        <!-- место под кнопку «Подробная смета»: ссылку/окно подключим, когда будет смета -->
+        <!-- кнопка открывает окно со сметой (modal.py) -->
         <button type="button" class="inv-btn" data-a style="--d:5" id="estimate">Подробная смета<span>→</span></button>
       </div>
       <div class="inc" data-a style="--d:5">
@@ -843,8 +843,89 @@ figcaption .ln a:hover{opacity:.7}
 .inv-btn:hover span{transform:translateX(4px)}
 .free{display:inline-block;vertical-align:middle;margin-left:8px;padding:3px 10px;border-radius:999px;background:var(--or);color:#fff;
   font-family:'PFDin';font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+
+/* окно «Подробная смета» */
+.es{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:24px}
+.es[hidden]{display:none}
+.es-bg{position:absolute;inset:0;background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:esf .25s ease}
+.es-box{position:relative;width:min(1080px,100%);max-height:calc(100vh - 48px);display:flex;flex-direction:column;background:var(--paper);
+  border-radius:20px;padding:36px 40px 30px;box-shadow:0 30px 90px rgba(0,0,0,.45);animation:esu .35s var(--ease)}
+@keyframes esf{from{opacity:0}} @keyframes esu{from{opacity:0;transform:translateY(18px)}}
+.es-x{position:absolute;top:18px;right:20px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(0,0,0,.2);background:none;
+  font-size:24px;line-height:1;color:var(--ink);cursor:pointer}
+.es-x:hover{border-color:var(--or);color:var(--or)}
+.es-t{font-family:'Ramillas';font-weight:700;font-size:30px;line-height:1.15;margin-top:12px;color:var(--ink);padding-right:40px}
+.es-sub{font-size:15px;line-height:1.45;color:var(--ink-3);margin-top:8px}
+.es-scroll{overflow:auto;overscroll-behavior:contain;margin-top:20px;min-height:0;flex:1}
+.es-tb{width:100%;table-layout:fixed;border-collapse:collapse;font-family:'Myriad';font-size:15px;color:var(--ink-2)}
+.es-tb th{position:sticky;top:0;background:var(--paper);text-align:left;font-family:'PFDin';font-weight:700;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);padding:0 10px 10px;border-bottom:1px solid rgba(0,0,0,.2)}
+.es-tb td{padding:9px 10px;border-bottom:1px solid rgba(0,0,0,.08);vertical-align:top}
+.es-tb td:nth-child(n+4),.es-tb th:nth-child(n+4){text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.es-tb td:nth-child(3){white-space:nowrap;color:var(--ink-3)}
+.es-tb td:first-child{color:var(--or);font-weight:600}
+.es-tb td.es-s{text-align:right;white-space:nowrap}
+.es-sec td{background:rgba(0,0,0,.045);font-weight:600;color:var(--ink);padding-top:12px}
+.es-sec.es-free td{background:rgba(233,83,31,.1)}
+.es-sec.es-free td:last-child,.es-sec.es-free~tr td:last-child{text-decoration:line-through;text-decoration-color:var(--or);color:var(--ink-3)}
+.es-tot{display:flex;justify-content:flex-end;gap:40px;margin-top:18px;padding-top:16px;border-top:2px solid var(--ink)}
+.es-tot div{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.es-tot span{font-family:'PFDin';font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.es-tot b{font-family:'Myriad';font-weight:600;font-size:22px;color:var(--ink);font-variant-numeric:tabular-nums}
+.es-tot .gift b{color:var(--or)}
+.es-tot .main b{font-family:'Ramillas';font-weight:700;font-size:34px}
+@media (max-width:760px){.es-box{padding:26px 18px 20px}.es-t{font-size:23px}.es-tb{font-size:13px;table-layout:auto}.es-tb col{width:auto!important}.es-tb td:nth-child(3),.es-tb th:nth-child(3),
+  .es-tb td:nth-child(5),.es-tb th:nth-child(5){display:none}.es-tot{gap:18px}}
 </style>
 
+
+<div class="es" id="es" role="dialog" aria-modal="true" aria-labelledby="es-t" hidden>
+  <div class="es-bg" data-close></div>
+  <div class="es-box">
+    <button type="button" class="es-x" data-close aria-label="Закрыть">×</button>
+    <div class="eyebrow">Подробная смета</div>
+    <h3 class="es-t" id="es-t">Перенос сайтов White Circle и White Square на собственный код</h3>
+    <p class="es-sub">Ставки специалистов те же, что в прошлых сметах. 67 часов работы, часть рутины переноса выполняет ИИ.</p>
+    <div class="es-scroll">
+    <table class="es-tb"><colgroup><col style="width:36px"><col><col style="width:130px"><col style="width:64px"><col style="width:120px"><col style="width:96px"></colgroup>
+      <thead><tr><th>№</th><th>Работы</th><th>Специалист</th><th>Часы</th><th>Ставка за час</th><th>Сумма</th></tr></thead>
+      <tbody>
+<tr class="es-sec"><td>1</td><td colspan="4">Аудит и подготовка</td><td class="es-s">$270</td></tr>
+<tr><td></td><td>Аудит страниц, форм, CMS-коллекций и адресов обоих сайтов</td><td>Тим лид</td><td>3</td><td>$50</td><td>$150</td></tr>
+<tr><td></td><td>Выгрузка контента и коллекций из Webflow: статьи, команда, вакансии</td><td>Верстальщик</td><td>3</td><td>$40</td><td>$120</td></tr>
+<tr class="es-sec"><td>2</td><td colspan="4">Перенос на код с помощью ИИ</td><td class="es-s">$1 300</td></tr>
+<tr><td></td><td>Архитектура проекта и шаблоны страниц</td><td>Тим лид</td><td>4</td><td>$50</td><td>$200</td></tr>
+<tr><td></td><td>Перенос страниц White Circle с ИИ, сверка с оригиналом</td><td>Верстальщик</td><td>12</td><td>$40</td><td>$480</td></tr>
+<tr><td></td><td>Перенос страниц White Square с ИИ, сверка с оригиналом</td><td>Верстальщик</td><td>6</td><td>$40</td><td>$240</td></tr>
+<tr><td></td><td>Перенос меню и микро анимаций</td><td>Верстальщик</td><td>3</td><td>$40</td><td>$120</td></tr>
+<tr><td></td><td>Мобильная адаптация и сверка</td><td>Верстальщик</td><td>4</td><td>$40</td><td>$160</td></tr>
+<tr><td></td><td>Код-ревью переноса</td><td>Тим лид</td><td>2</td><td>$50</td><td>$100</td></tr>
+<tr class="es-sec"><td>3</td><td colspan="4">Админка и формы</td><td class="es-s">$570</td></tr>
+<tr><td></td><td>Админка: тексты, статьи, услуги, команда, вакансии</td><td>Тим лид</td><td>6</td><td>$50</td><td>$300</td></tr>
+<tr><td></td><td>Подключение страниц и коллекций к админке</td><td>Верстальщик</td><td>3</td><td>$40</td><td>$120</td></tr>
+<tr><td></td><td>Формы: доставка на почту и в Telegram, хранение заявок в админке, защита от спама</td><td>Тим лид</td><td>3</td><td>$50</td><td>$150</td></tr>
+<tr class="es-sec"><td>4</td><td colspan="4">Тестирование и тех. подключение</td><td class="es-s">$260</td></tr>
+<tr><td></td><td>Тестирование из России и других стран, браузеры, устройства, отправка всех форм</td><td>Верстальщик</td><td>4</td><td>$40</td><td>$160</td></tr>
+<tr><td></td><td>Хостинг, домены, SSL, переключение без простоя</td><td>Тим лид</td><td>2</td><td>$50</td><td>$100</td></tr>
+<tr class="es-sec"><td>5</td><td colspan="4">Управление проектом</td><td class="es-s">$600</td></tr>
+<tr><td></td><td>Управление командой</td><td>Тим лид</td><td>3</td><td>$50</td><td>$150</td></tr>
+<tr><td></td><td>Управление проектом</td><td>Проджект менеджер</td><td>6</td><td>$50</td><td>$300</td></tr>
+<tr><td></td><td>Аккаунтинг</td><td>Аккаунт менеджер</td><td>3</td><td>$50</td><td>$150</td></tr>
+<tr class="es-sec es-free"><td>6</td><td colspan="4">Входит бесплатно</td><td class="es-s">$730</td></tr>
+<tr><td></td><td>SEO-склейка: 301-редиректы, карта сайта, мета-теги, robots</td><td>Верстальщик</td><td>4</td><td>$40</td><td>$160</td></tr>
+<tr><td></td><td>Переезд в Google Search Console и Яндекс Вебмастере</td><td>Тим лид</td><td>1</td><td>$50</td><td>$50</td></tr>
+<tr><td></td><td>Поддержка в течение месяца после запуска</td><td>Верстальщик</td><td>8</td><td>$40</td><td>$320</td></tr>
+<tr><td></td><td>Исправление ошибок в течение месяца</td><td>Тим лид</td><td>4</td><td>$50</td><td>$200</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="es-tot">
+      <div><span>Работы</span><b>$3 730</b></div>
+      <div class="gift"><span>Бесплатно для вас</span><b>−$730</b></div>
+      <div class="main"><span>Итого</span><b>$3 000</b></div>
+    </div>
+  </div>
+</div>
 <script>
 (function(){
   var root = document.documentElement;
@@ -944,6 +1025,23 @@ figcaption .ln a:hover{opacity:.7}
     aim = Math.max(0, Math.round(to)); aimAt = Date.now();
     window.scrollTo({ top: aim, behavior: 'smooth' });
   });
+})();
+</script>
+<script>
+(function(){
+  var m=document.getElementById('es'), btn=document.getElementById('estimate'), last=null;
+  if(!m||!btn) return;
+  function open(){ last=document.activeElement; m.hidden=false; m.querySelector('.es-x').focus(); }
+  function close(){ m.hidden=true; if(last) last.focus(); }
+  btn.addEventListener('click', open);
+  m.addEventListener('click', function(e){ if(e.target.closest('[data-close]')) close(); });
+  // пока окно открыто, клавиши не листают деку
+  window.addEventListener('keydown', function(e){
+    if(m.hidden) return;
+    if(e.key==='Escape'){ close(); }
+    if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','PageUp','PageDown',' ','Home','End'].indexOf(e.key)>-1) e.stopImmediatePropagation();
+  }, true);
+  m.addEventListener('wheel', function(e){ e.stopPropagation(); }, {passive:true});
 })();
 </script>
 </body>
